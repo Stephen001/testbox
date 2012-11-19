@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0"> 
+    <persistence-unit name="server"> 
+        <jta-data-source>jdbc/testbox/server</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+        	<property name="toplink.ddl-generation" value="create-tables" />
+        	<property name="toplink.ddl-generation.output-mode" value="database" />
+        </properties> 
+    </persistence-unit> 
+</persistence>
